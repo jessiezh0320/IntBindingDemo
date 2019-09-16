@@ -12,9 +12,16 @@ namespace TwoPickerDemo
             // Sample to pre-load list of records from data server of KVP
             //PickerChoices = GetDataFromServerForDemo("select * from LookupTable where Category = 'demo'");
            PickerChoices = new ObservableCollection<TestModel>() {
-                new TestModel{ MyID = 1,ShowValue="test1" }, new TestModel{ MyID = 2,ShowValue="test2" },
-                new TestModel{ MyID = 3,ShowValue="test3" }, new TestModel{ MyID = 4,ShowValue="test4" }
+                new TestModel{ MyID = 5,ShowValue="test1" }, new TestModel{ MyID = 9,ShowValue="test2" },
+                new TestModel{ MyID = 18,ShowValue="test18" }, new TestModel{ MyID = 34,ShowValue="test4" }
             };
+
+            //foreach (TestModel model in PickerChoices) {
+            //    if (model.MyID == 18) {// default value
+            //        SelectedRecord = model;
+            //        break;
+            //    }
+            //}
 
             ShowThisRecord = new TestModel();
             // for grins, I am setting the value that SHOULD be defaulted 
